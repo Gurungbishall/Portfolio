@@ -6,7 +6,6 @@ import Home from "./pages/Home/Home.tsx";
 import About from "./pages/About/About.tsx";
 import Service from "./pages/Service/Service.tsx";
 import Contact from "./pages/Contact/Contact.tsx";
-
 import NoPageFound from "./pages/Nopagesfound/NopagesFound.tsx";
 
 import "./index.css";
