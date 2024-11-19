@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className="h-screen w-screen  bg-amber-500">
         <NavBar />
-        <div className="flex flex-col pt-20 justify-center items-center gap-36">
+        <div className="flex flex-col px-6 pt-20 justify-center items-center gap-14">
           <HomeBodyTop />
           <HomeBodyBottom />
         </div>
