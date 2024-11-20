@@ -3,7 +3,6 @@ type ContainerProps = {
   Which?: string;
   FromWhere?: string;
   Date?: string;
-  fontwidth?: string;
 };
 
 export default function Container({
@@ -11,17 +10,17 @@ export default function Container({
   Which,
   FromWhere,
   Date,
-  fontwidth = "normal",
+
 }: ContainerProps) {
   return (
     <>
-      <div className="p-4 mt-4 flex flex-col gap-2 text-base text-justify border-2 border-solid border-black rounded-xl">
-        <span className={`text-xl font-${fontwidth}`}>
+      <div className="p-4 mt-4 flex flex-col gap-2 text-sm text-justify border-2 border-solid border-black rounded-xl xl:text-2xl">
+        <span className=" font-normal ">
           {Which}
           <span className="font-bold text-purple-600"> {FromWhere}</span>
         </span>
         <span className="text-purple-500">{Date}</span>
-        <span>{children}</span>
+        <span className="text-xs xl:text-xl">{children}</span>
       </div>
     </>
   );

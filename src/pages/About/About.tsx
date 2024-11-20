@@ -8,7 +8,7 @@ export default function About() {
     <>
       <div className=" bg-amber-500">
         <NavBar />
-        <div className="pt-10">
+        <div className="pt-4 xl:pt-10">
           <AboutBodyTop />
           <AboutBodyBottom />
         </div>

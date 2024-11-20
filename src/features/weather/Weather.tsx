@@ -28,7 +28,7 @@ export default function TodayWeather() {
 
   return (
     <>
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap gap-1 xl:gap-4">
         <div>{`Location : ${location}`}</div>
         <div>{`Temperature: ${weather.temperature}`}</div>
         <div>{`Wind: ${weather.wind}`}</div>

@@ -1,24 +1,8 @@
-type ButtonProps = {
-  children: React.ReactNode;
-  textSize?: string;
-  paddingSize?: string;
-  fontStyle?: string;
-  bgColor?: string;
-};
-
-export default function Button({
-  children,
-  textSize,
-  paddingSize = "p-4",
-  fontStyle = "bold",
-  bgColor = "bg-black",
-}: ButtonProps) {
+export default function Button({ name }: { name: string }) {
   return (
     <>
-      <button
-        className={`text-${textSize}  ${paddingSize} font-${fontStyle} text-white ${bgColor} rounded-2xl cursor-pointer transition duration-1000 ease-out hover:scale-110`}
-      >
-        {children}
+      <button className="p-2 text-sm text-white font-bold bg-black rounded-md xl:text-2xl">
+        {name}
       </button>
     </>
   );

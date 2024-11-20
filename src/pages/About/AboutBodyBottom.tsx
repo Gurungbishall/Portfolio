@@ -3,9 +3,9 @@ import Container from "../../component/ui/Container";
 export default function AboutBodyBottom() {
   return (
     <>
-      <div className="mx-80 mt-14 pb-20 flex gap-6 justify-center items-center">
+      <div className="mx-5 mt-4 pb-8 flex flex-wrap gap-6 justify-center items-center xl:flex-nowrap xl:mx-16 xl:mt-10 xl:pb-24">
         <div>
-          <span className="font-bold text-4xl cursor-pointer">Education</span>
+          <span className="font-bold text-2xl xl:text-4xl cursor-pointer">Education</span>
           <Container
             Which="Class 10 from"
             FromWhere="shree Bhu Pu sainik Angreji School"
@@ -38,7 +38,7 @@ export default function AboutBodyBottom() {
         </div>
 
         <div>
-          <span className="font-bold text-4xl cursor-pointer">
+          <span className="font-bold text-2xl xl:text-4xl cursor-pointer">
             Work Experience
           </span>
           <Container
