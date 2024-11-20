@@ -12,7 +12,7 @@ export default function Input({ name, type, placeholder }: InputProps) {
         type={type}
         placeholder={placeholder}
         required
-        className="p-2 w-96"
+        className="p-2 xl:w-96 xl:rounded-lg"
       />
     </>
   );

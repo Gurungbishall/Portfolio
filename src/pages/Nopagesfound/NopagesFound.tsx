@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Button from "../../component/ui/Button";
 
 export default function NoPageFound() {
   return (
@@ -8,9 +7,9 @@ export default function NoPageFound() {
         <span className="font-mono font-bold text-4xl text-white">
           404 Not found
         </span>
-        <Button textSize="xl">
+        <button className="p-2 text-sm text-white font-bold bg-black rounded-md xl:text-2xl">
           <Link to="/">Home</Link>
-        </Button>
+        </button>
       </div>
     </>
   );

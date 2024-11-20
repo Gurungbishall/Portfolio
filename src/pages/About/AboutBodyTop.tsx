@@ -14,7 +14,7 @@ export default function AboutBodyTop() {
         </div>
         <div className="w-3/5 flex flex-col gap-2  font-sans xl:px-5 xl:gap-4 xl:text-2xl">
           <span className="font-bold text-2xl xl:text-4xl">About Me</span>
-          <span className="text-sm text-balance xl:text-2xl">
+          <span className="text-sm  text-balance xl:text-2xl">
             Hello, I'm a Bishal, Webdeveloper based on Kathmandu. I have High
             Experience in Web design and building and customization. Also I am
             good at

@@ -1,10 +1,9 @@
-import Button from "../../component/ui/Button";
 import Input from "../../component/ui/Input";
 
 export default function ContactBody() {
   return (
     <>
-      <div className="m-36 flex justify-center items-center ">
+      <div className="m-20 flex justify-center items-center ">
         <form
           action="https://api.web3forms.com/submit"
           method="POST"
@@ -15,22 +14,27 @@ export default function ContactBody() {
             name="access_key"
             value={import.meta.env.VITE_FORM_API}
           />
-          <span className="font-bold text-4xl">Enter your Details</span>
+          <span className="font-bold text-2xl xl:text-4xl">
+            Enter your Details
+          </span>
           <Input name="name" type="text" placeholder="Name" />
           <Input name="email" type="email" placeholder="Email" />
-          <select name="purpose" required className="p-2">
+          <select name="purpose" required className="p-2 text-xl xl:rounded-lg">
             <option value="Web">UI design</option>
             <option value="Game">Web development</option>
             <option value="System">App development</option>
           </select>
 
-          <textarea name="message" placeholder="Message" required>
-            {" "}
-          </textarea>
+          <textarea
+            name="message"
+            placeholder="Message"
+            className="p-2 xl:rounded-lg"
+            required
+          />
 
-          <Button bgColor="bg-red-600" textSize="xl" paddingSize="p-2">
+          <button className="p-2 text-sm text-white font-bold bg-black rounded-md xl:text-2xl">
             Submit
-          </Button>
+          </button>
         </form>
       </div>
     </>
